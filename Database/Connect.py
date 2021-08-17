@@ -14,7 +14,7 @@ def connect():
         # display the PostgreSQL database server version
         db_version = cur.fetchone()
         print(db_version)
-       
+
 	# close the communication with the PostgreSQL
         cur.close()
     except (Exception, pg.DatabaseError) as error:
@@ -27,5 +27,5 @@ def connect():
 
 if __name__ == '__main__':
     connect()
-         
+
 #//TODO Debug the Connection
